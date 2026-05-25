@@ -1,0 +1,6 @@
+{
+  "name": "Leleo Calçados",
+  "description": "Landing page premium e moderna para a Leleo Calçados, destacando calçados, roupas, moda praia e fitness com sofisticação.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

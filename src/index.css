@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-gold-50: #fbf8f3;
+  --color-gold-100: #f6efe1;
+  --color-gold-200: #eddcb9;
+  --color-gold-300: #e0c289;
+  --color-gold-400: #d2a45a;
+  --color-gold-500: #c58933;
+  --color-gold-600: #a97026;
+  --color-gold-700: #88551d;
+  --color-gold-800: #6a4019;
+  --color-gold-900: #553317;
+  --color-gold-950: #301a0b;
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); opacity: 0.95; }
+  50% { transform: scale(1.03); opacity: 1; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s infinite ease-in-out;
+}
+
