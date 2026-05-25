@@ -350,7 +350,7 @@ export default function App() {
       <section id="diferenciais" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="font-mono text-xs uppercase tracking-widest text-gold-400 font-bold block">Por Que Caminhar Conosco?</span>
-          <h2 className="font-display font-extrabold text-4xl sm:text-5xl text-white tracking-tight leading-none">
+          <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight leading-none">
             A Curadoria de Moda mais <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 to-gold-600 block sm:inline">Encantadora do Interior</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-base font-light">
