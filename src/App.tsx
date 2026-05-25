@@ -1,11 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { 
   Clock, 
   MapPin, 
   Phone, 
   Instagram, 
   ChevronRight, 
-  Star, 
   Sparkles, 
   Check, 
   X, 
@@ -15,17 +14,16 @@ import {
 } from 'lucide-react';
 
 export default function App() {
-  // Estado para a foto ampliada (Modal)
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Link do WhatsApp configurado com o número: 88 99905-4275
+  // Link do WhatsApp atualizado com o seu número novo
   const whatsappUrl = "https://wa.me/5588999054275?text=Ol%C3%A1%21+Gostaria+de+conhecer+o+cat%C3%A1logo+da+Leleo+Cal%C3%A7ados.";
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 font-sans antialiased">
       
       {/* TOPO / HEADER */}
-      <header className="border-b border-neutral-800 bg-neutral-900/50 backdrop-blur sticky top-0 z-40">
+      <header className="border-b border-neutral-800 bg-neutral-900/90 backdrop-blur sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold tracking-wider text-amber-500">LELEO CALÇADOS</span>
@@ -80,7 +78,6 @@ export default function App() {
                 </a>
               </div>
               
-              {/* Estatísticas simples */}
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-neutral-900">
                 <div>
                   <p className="text-2xl font-bold text-white">3</p>
@@ -97,7 +94,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Imagem de Destaque da Logo */}
+            {/* Imagem Corrigida para a sua Logo Roxa original */}
             <div className="relative flex justify-center">
               <div className="w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden border border-neutral-800 bg-neutral-900 relative group shadow-2xl">
                 <img 
@@ -105,12 +102,8 @@ export default function App() {
                   alt="Leleo Calçados" 
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-700 cursor-pointer"
                   onClick={() => setSelectedImage('/src/assets/images/leleo_header.png')}
-                  onError={(e) => {
-                    // Fallback se a imagem local não carregar antes do deploy final
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&auto=format&fit=crop&q=80";
-                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent flex flex-col justify-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/10 to-transparent flex flex-col justify-end p-6">
                   <span className="text-xs font-bold text-amber-500 uppercase tracking-widest mb-1">Leleo Calçados</span>
                   <h3 className="text-lg font-bold text-white">Beleza e Conforto para os seus Pés</h3>
                   <p className="text-xs text-neutral-400 mt-1">Encontre o modelo perfeito para o seu estilo com a qualidade que você merece.</p>
@@ -120,8 +113,8 @@ export default function App() {
           </div>
         </section>
 
-        {/* VITRINE / SEÇÕES (Exemplo simplificado para manter o foco) */}
-        <section id="colecoes" className="py-20 max-w-7xl mx-auto px-4">
+        {/* VITRINE - Espaçamento corrigido para o menu não cobrir */}
+        <section id="colecoes" className="py-24 max-w-7xl mx-auto px-4 scroll-mt-16">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Nossos Segmentos</h2>
             <p className="text-neutral-400">Trabalhamos com o melhor da moda para garantir estilo e elegância em qualquer ocasião.</p>
@@ -147,7 +140,7 @@ export default function App() {
         </section>
 
         {/* SEÇÃO SOBRE NÓS */}
-        <section id="sobre" className="py-20 bg-neutral-900/40 border-y border-neutral-900">
+        <section id="sobre" className="py-24 bg-neutral-900/40 border-y border-neutral-900 scroll-mt-16">
           <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Sobre a Leleo Calçados</h2>
@@ -184,8 +177,8 @@ export default function App() {
           </div>
         </section>
 
-        {/* SEÇÃO DE CONTATO / RODAPÉ */}
-        <section id="contato" className="py-20 max-w-7xl mx-auto px-4">
+        {/* SEÇÃO DE CONTATO */}
+        <section id="contato" className="py-24 max-w-7xl mx-auto px-4 scroll-mt-16">
           <div className="bg-gradient-to-r from-neutral-900 to-neutral-950 border border-neutral-800 rounded-3xl p-8 sm:p-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <h2 className="text-2xl sm:text-3xl font-bold">Deseja fazer um pedido ou visitar nossa loja?</h2>
@@ -229,7 +222,7 @@ export default function App() {
         <p>&copy; {new Date().getFullYear()} Leleo Calçados. Todos os direitos reservados.</p>
       </footer>
 
-      {/* MODAL DE IMAGEM AMPLIADA */}
+      {/* MODAL */}
       {selectedImage && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onClick={() => setSelectedImage(null)}>
           <button className="absolute top-4 right-4 text-neutral-400 hover:text-white bg-neutral-900/50 p-2 rounded-full transition">
