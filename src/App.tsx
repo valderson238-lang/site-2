@@ -213,12 +213,8 @@ export default function App() {
     : galleryItems.filter(item => item.category === activeTab);
 
   return (
-    <div <div style={{ overflowX: 'hidden' }} className="min-h-screen bg-[#070708] text-gray-100 font-sans selection:bg-gold-500 selection:text-black overflow-x-hidden antialiased"> className="min-h-screen bg-[#070708] text-gray-100 font-sans selection:bg-gold-500 selection:text-black overflow-x-hidden antialiased">
+    <div className="min-h-screen bg-[#070708] text-gray-100 font-sans selection:bg-gold-500 selection:text-black antialiased">
       
-      {/* GLOW DECORATIONS */}
-      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-gold-500/10 rounded-full blur-[120px] pointer-events-none -z-10" />
-      <div className="absolute top-1/2 right-1/4 w-[600px] h-[600px] bg-gold-400/5 rounded-full blur-[150px] pointer-events-none -z-10" />
-
       {/* HEADER */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#070708]/80 border-b border-white/5 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
