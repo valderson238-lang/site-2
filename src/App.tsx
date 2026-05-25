@@ -51,25 +51,25 @@ export default function App() {
       id: 'belacruz',
       name: 'Leleo Calçados — Bela Cruz',
       address: 'R. Humaitá, 514 - Centro | Bela Cruz, CE',
-      phone: '+55 88 99999-9999', // Placeholder default
+      phone: '+55 88 9905-4275', // Placeholder default
       instagram: 'leleocalcados',
-      mapsUrl: 'https://www.instagram.com/leleocalcados/',
+      mapsUrl: 'https://maps.app.goo.gl/247o89RPQZJr4XPZA',
       whatsappMessage: 'Olá! Vim do site premium e gostaria de conferir calçados e novidades para a loja de Bela Cruz.'
     },
     marco: {
       id: 'marco',
       name: 'Leleo Calçados — Marco',
       address: 'Av. Prefeito Guido Osterno, 355 - Centro | Marco, CE',
-      phone: '+55 88 99999-9999',
+      phone: '+55 88 9905-4275',
       instagram: 'leleocalcados',
-      mapsUrl: 'https://www.instagram.com/leleocalcados/',
+      mapsUrl: 'https://maps.app.goo.gl/uRr6exhbQfobGH3S8',
       whatsappMessage: 'Olá! Vim do site e gostaria de falar com uma vendedora da loja de Marco.'
     },
     cruz: {
       id: 'cruz',
       name: 'Leleo Calçados — Cruz',
       address: 'R. Célso Araújo, 92 - Centro | Cruz, CE, 62595-000',
-      phone: '+55 88 99999-9999',
+      phone: '+55 88 9905-4275',
       instagram: 'leleocalcados',
       mapsUrl: 'https://maps.google.com/?q=Leleo+Calcados+DE+CRUZ',
       whatsappMessage: 'Olá! Estou no site e desejo falar com a equipe de Cruz sobre os calçados e promoções.'
