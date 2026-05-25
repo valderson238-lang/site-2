@@ -158,7 +158,7 @@ export default function App() {
     e.preventDefault();
     const formattedName = leadName ? encodeURIComponent(leadName) : 'Cliente Especial';
     const message = `Olá! Meu nome é ${formattedName}. Estou visitando a Landing Page Premium e gostaria de receber novidades e o catálogo moderno de calçados e moda para a categoria *${leadPreference}* na loja de *${leadStore}*!`;
-    const phoneCruz = '5588997327376'; // Standard Leleo WhatsApp base for sales (Example real number/structure for action oriented interaction)
+    const phoneCruz = '+5588999054275'; // Standard Leleo WhatsApp base for sales (Example real number/structure for action oriented interaction)
     window.open(`https://wa.me/${phoneCruz}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
   };
 
@@ -605,7 +605,7 @@ export default function App() {
                   <span>Ver Mapa no Google</span>
                 </a>
                 <a 
-                  href={`https://wa.me/5588997327376?text=${encodeURIComponent(stores[selectedStore].whatsappMessage)}`}
+                  href={`https://wa.me/+5588999054275?text=${encodeURIComponent(stores[selectedStore].whatsappMessage)}`}
                   target="_blank"
                   className="flex items-center gap-2 justify-center px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs font-bold uppercase tracking-wider transition-all"
                   rel="noreferrer"
