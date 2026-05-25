@@ -213,7 +213,7 @@ export default function App() {
     : galleryItems.filter(item => item.category === activeTab);
 
   return (
-    <div className="min-h-screen bg-[#070708] text-gray-100 font-sans selection:bg-gold-500 selection:text-black antialiased">
+    <div style={{ width: '100vw', overflowX: 'hidden' }} className="min-h-screen bg-[#070708] text-gray-100 font-sans selection:bg-gold-500 selection:text-black antialiased">
       
       {/* HEADER */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#070708]/80 border-b border-white/5 transition-all duration-300">
